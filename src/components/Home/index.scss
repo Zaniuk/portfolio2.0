@@ -1,0 +1,33 @@
+.landing{
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 30%;
+    h1{
+        padding: 0;
+        margin: 0;
+    }
+    p{
+        margin: 1rem 0;
+        max-width: 500px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .contact-button{
+        border: none;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        
+    }
+}
+
+.highlight{
+    color: #6b5bd4;
+}
+.color-blue{
+    color: #0496FF;
+}
+.bold{
+    font-weight: 800;
+}
