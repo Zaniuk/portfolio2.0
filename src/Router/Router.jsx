@@ -6,6 +6,7 @@ import Portfolio from '../components/Portfolio'
 import About from '../components/About'
 import Blog from '../components/Blog'
 import Contact from '../components/Contact'
+import Post from '../components/Blog/Post'
 import {AnimatePresence} from 'framer-motion'
 export default function ExtRouter() {
     const location = useLocation()
@@ -26,6 +27,9 @@ export default function ExtRouter() {
             </Route>
             <Route path='/contact' element={<Layout/>}>
               <Route index element={<Contact/>} />
+            </Route>
+            <Route path='/blog/post/:slug' element={<Layout/>}>
+              <Route index element={<Post/>} />
             </Route>
           </Routes>
     </AnimatePresence>
