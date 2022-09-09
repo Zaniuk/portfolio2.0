@@ -1,7 +1,8 @@
 import React, {useRef} from "react";
 import "./Card.scss";
 import { motion, useInView } from "framer-motion";
-export default function Card({ title, description, image, tag }) {
+import Tags from "./Tags";
+export default function Card({ title, description, image, tags, github }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
@@ -18,11 +19,15 @@ export default function Card({ title, description, image, tag }) {
         <img src={image} alt="rover" />
       </div>
       <div className="card-body">
-        <span className="tag tag-teal">{tag}</span>
+        <Tags tags={tags} />
         <h4>{title}</h4>
         <p>{description}</p>
-        <a href="#">
-          <button>Github</button>
+        <a href={github} className="project-link">
+          <motion.button
+          initial={{scale: 1}}
+          whileHover={{scale: 1.2}}
+          transition={{type: "spring", stiffness: 300, bounce: 0.5}}
+          className="project-button-link">Github</motion.button>
         </a>
       </div>
     </div>

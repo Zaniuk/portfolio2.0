@@ -29,6 +29,7 @@
     margin: 0;
     color: #fff;
     padding: 2px 10px;
+    margin-right: 10px;
     text-transform: uppercase;
     cursor: pointer;
   }
@@ -64,3 +65,9 @@
     color: #545d7a;
   }
   
+  .project-button-link{
+    border: none;
+    background-color: #6b5bd4;
+    color: white;
+    padding: .5rem 1rem;
+  }
