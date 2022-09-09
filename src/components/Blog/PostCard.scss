@@ -1,0 +1,49 @@
+.post-card {
+
+    max-width: 300px;
+    background-color: #3B3561;
+    img {
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+        max-width: 100%;
+        aspect-ratio: 2/1;
+        object-fit: cover;
+    }
+    .post-card-content {
+        box-sizing: border-box;
+        padding: .5rem;
+        .post-button-wrapper {
+            padding-top: 1rem;
+            display: flex;
+            justify-content: flex-end;
+
+            a {
+                padding: .5rem 1rem;
+                background-color: red;
+                border-radius: .3rem;
+            }
+        }
+
+        p,
+        h1 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            margin: 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+       
+    }
+}

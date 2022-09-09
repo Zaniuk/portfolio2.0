@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./index.scss";
 import { motion } from "framer-motion";
-export default function index() {
+import PostCard from "./PostCard";
+export default function Blog() {
+  const [postList , setPostList] = useState([])
+  useEffect(() => {
+    fetch('https://zaniukblog.azurewebsites.net/posts')
+      .then(res => res.json())
+      .then(res => setPostList(res))
+  }, [])
   return (
-    <div>
-      <h1>Blog</h1>
+    <div className="post-list">
+     {postList.map((post, index) => {
+        return (
+          <PostCard key={`post-${index}`} title={post.title} img={post.img} desc={post.desc} date={post.date} slug={post.slug} />
+        )
+     })}
     </div>
   );
 }

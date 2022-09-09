@@ -1,0 +1,12 @@
+.post{
+    max-width: 900px;
+    margin: 0 auto;
+    .markdown-body{
+        background-color: transparent;
+    }
+    img{
+        aspect-ratio: 2/1;
+        object-fit: cover;
+        width: 100%;
+    }
+}
