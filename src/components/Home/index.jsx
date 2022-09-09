@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import "./index.scss";
 export default function Home() {
   return (
-    <div>
+    <div className="landing-wrapper">
       <div className="landing">
         <motion.h1
           initial={{ opacity: 0, y: -100 }}
