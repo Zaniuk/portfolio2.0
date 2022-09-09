@@ -10,41 +10,57 @@ export default function index() {
       description:
         "A simple blog API built with Node.js, Express, MongoDB and Mongoose.",
       image:
-        "https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg",
-      tag: "Backend",
+        "https://i.ibb.co/vP8Mg1n/GERONIMO.png",
+      tags: ["Backend", "RESTful API"],
+      github: "https://github.com/Zaniuk/portfolio-backend"
     },
     {
-      title: "Blog API",
+      title: "Udemy Free Course Notifier",
       description:
-        "A simple blog API built with Node.js, Express, MongoDB and Mongoose.",
+        "A simple app that notifies you when a course you're interested in goes free on Udemy.",
       image:
-        "https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg",
-      tag: "Backend",
+        "https://i.pinimg.com/originals/84/34/0d/84340dfa0ee08fec0ab5b573f4716221.jpg",
+      tags: ["Backend", "Tooling"],
+      github: "https://github.com/Zaniuk/AlkemyChallenge"
     },
     {
-      title: "Blog API",
+      title: "ABM Bancario",
       description:
-        "A simple blog API built with Node.js, Express, MongoDB and Mongoose.",
+        "A banking system built with React.js, Node.js, Express, PostgreSQL and Sequelize.",
       image:
-        "https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg",
-      tag: "Backend",
+        "https://www.ubackground.com/_ph/2/617246434.jpg",
+      tags: ["Fullstack", "RESTful API"], 
+      github: "https://github.com/Zaniuk/AlkemyChallenge"
+    },
+
+    {
+      title: "Anime Recommendations App",
+      description:
+        "A simple anime recommendations app built with React.JS.",
+      image:
+        "https://i1.sndcdn.com/artworks-000630799198-kqinmt-t500x500.jpg",
+      tags: ["Frontend", "API"],
+      github: "https://github.com/Zaniuk/Anime-App"
     },
     {
-      title: "Blog API",
+      title: "React Weather App",
       description:
-        "A simple blog API built with Node.js, Express, MongoDB and Mongoose.",
+        "A simple weather app built with React.js and OpenWeatherMap API.",
       image:
-        "https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg",
-      tag: "Backend",
+        "http://store-images.s-microsoft.com/image/apps.10595.14397430983184912.cfdf6f70-0a34-4999-b494-936559d822c3.7355576f-baf9-4be3-8b34-27bdc6ac1bd2",
+      tags: ["Frontend", "API"],
+      github: "https://github.com/Zaniuk/WeatherReactApp"
     },
     {
-      title: "Blog API",
+      title: "The Wine Valley",
       description:
-        "A simple blog API built with Node.js, Express, MongoDB and Mongoose.",
+        "Static website built with HTML, CSS and JavaScript. Simulates a wine shop.",
       image:
-        "https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg",
-      tag: "Backend",
-    },
+        "https://wallpaperaccess.com/full/468014.jpg",
+      tags: ["Frontend", "Static"],
+      github: "https://github.com/Zaniuk/TiendaVinos"
+    },  
+   
   ];
   const certifications = [
     {
@@ -52,7 +68,7 @@ export default function index() {
       title: "Paths to the Future",
       status: "Ongoing",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, accusantium!",
+        "Object Oriented Programming. MongoDB, ExpressJS, React, NodeJS, test-driven development, domain driven development.",
       image:
         "https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg",
     },
@@ -61,7 +77,7 @@ export default function index() {
       title: "Java Backend Engineer",
       status: "Ongoing",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, accusantium!",
+        "OOP, Design Patterns, Git, Spring, REST, Postman, Performance, CLEAN Architecture, SOLID Principles, Clean Code Patterns",
       image:
         "https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg",
     },
@@ -70,7 +86,7 @@ export default function index() {
       title: "Scrum  Methodology",
       status: "Completed",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, accusantium!",
+        "Introduction to SCRUM Methodology: User Stories, Processes, Scrum Roles, Events, Artifacts, Planning",
       image:
         "https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg",
     },
@@ -79,7 +95,7 @@ export default function index() {
       title: "Javascript Algorithms and Data Structures",
       status: "Completed",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, accusantium!",
+        "JavaScript, ES6 - ES12, destructuring, regular expressions, JavaScript good practices.",
       image:
         "https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg",
     },
@@ -88,7 +104,7 @@ export default function index() {
       title: "Responsive Web Design",
       status: "Completed",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, accusantium!",
+        "HTML, CSS, Bootstrap, responsive and accesible  design, SEO good practices",
       image:
         "https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg",
     },
@@ -103,7 +119,8 @@ export default function index() {
               title={project.title}
               description={project.description}
               image={project.image}
-              tag={project.tag}
+              tags={project.tags}
+              github={project.github}
               key={`project-${index}`}
             />
           ))}
