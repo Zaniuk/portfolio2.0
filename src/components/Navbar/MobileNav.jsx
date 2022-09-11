@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import MenuItems from "./MenuItems";
+import {FcCollapse, FcExpand } from "react-icons/fc";
 
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -19,7 +20,9 @@ export default function MobileNav() {
   return (
     <nav className="mobile-nav">
       <div className="button-wrapper">
-        <button className="toggle-button" id="toggle-button">^</button>
+        <button className="toggle-button" id="toggle-button">
+          {open ?  <FcExpand  /> : <FcCollapse /> }
+        </button>
       </div>
       {open ? <MenuItems open={open} /> : null}
       
