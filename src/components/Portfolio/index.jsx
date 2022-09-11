@@ -14,15 +14,15 @@ export default function index() {
       tags: ["Backend", "RESTful API"],
       github: "https://github.com/Zaniuk/portfolio-backend"
     },
-    {
-      title: "Udemy Free Course Notifier",
-      description:
-        "A simple app that notifies you when a course you're interested in goes free on Udemy.",
-      image:
-        "https://i.pinimg.com/originals/84/34/0d/84340dfa0ee08fec0ab5b573f4716221.jpg",
-      tags: ["Backend", "Tooling"],
-      github: "https://github.com/Zaniuk/AlkemyChallenge"
-    },
+    // {
+    //   title: "Udemy Free Course Notifier",
+    //   description:
+    //     "A simple app that notifies you when a course you're interested in goes free on Udemy.",
+    //   image:
+    //     "https://i.pinimg.com/originals/84/34/0d/84340dfa0ee08fec0ab5b573f4716221.jpg",
+    //   tags: ["Backend", "Tooling"],
+    //   github: "https://github.com/Zaniuk/AlkemyChallenge"
+    // },
     {
       title: "ABM Bancario",
       description:
