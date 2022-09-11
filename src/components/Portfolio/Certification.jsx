@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { colorTag } from "../../services/tagColorService";
 import "./Certification.scss";
 export default function Certification({
   title,
@@ -27,7 +28,7 @@ export default function Certification({
           <div className="cert-text">
             <h2>{company}</h2>
             <div className="tag-wrapper">
-              <span className="tag tag-teal">{status}</span>
+              <span className={`tag ${colorTag(status)}`}>{status}</span>
             </div>
             <h1>{title}</h1>
             <p>{description}</p>
