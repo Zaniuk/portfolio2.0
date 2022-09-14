@@ -70,7 +70,7 @@ export default function index() {
       description:
         "Object Oriented Programming. MongoDB, ExpressJS, React, NodeJS, test-driven development, domain driven development.",
       image:
-        "https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg",
+        "https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=750%2C422&strip=all",
     },
     {
       company: "OpenBootcamp",
@@ -79,7 +79,7 @@ export default function index() {
       description:
         "OOP, Design Patterns, Git, Spring, REST, Postman, Performance, CLEAN Architecture, SOLID Principles, Clean Code Patterns",
       image:
-        "https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg",
+        "https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=750%2C422&strip=all",
     },
     {
       company: "Nuntius IT",
@@ -88,7 +88,7 @@ export default function index() {
       description:
         "Introduction to SCRUM Methodology: User Stories, Processes, Scrum Roles, Events, Artifacts, Planning",
       image:
-        "https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg",
+        "https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=750%2C422&strip=all",
     },
     {
       company: "Freecodecamp",
@@ -97,7 +97,7 @@ export default function index() {
       description:
         "JavaScript, ES6 - ES12, destructuring, regular expressions, JavaScript good practices.",
       image:
-        "https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg",
+        "https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=750%2C422&strip=all",
     },
     {
       company: "Freecodecamp",
@@ -106,7 +106,7 @@ export default function index() {
       description:
         "HTML, CSS, Bootstrap, responsive and accesible  design, SEO good practices",
       image:
-        "https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg",
+        "https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=750%2C422&strip=all",
     },
   ];
   return (

@@ -5,3 +5,17 @@
     margin: 1rem;
     justify-items: center;
 }
+.under-dev{
+    display: flex;
+    flex-flow: column;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    a{
+        padding: 1rem 2rem;
+        background-color: #6b5bd4;
+        color: white;
+        text-decoration: none;
+        border-radius: .5rem;
+    }
+}
