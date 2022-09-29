@@ -73,7 +73,7 @@ export default function index() {
   ];
   const certifications = [
     {
-      company: "OpenBootcamp",
+      company: "Alkemy",
       title: "Fullstack Javascript",
       status: "Ongoing",
       description:
