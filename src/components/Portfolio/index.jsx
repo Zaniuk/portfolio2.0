@@ -6,9 +6,18 @@ import Certification from "./Certification";
 export default function index() {
   const projectList = [
     {
+      title: "ONG Alkemy API",
+      description:
+        "RESTful API made with NodeJS, Express, MySQL and Sequelize. It have JWT-based auth system and form validations.",
+      image:
+        "https://res.cloudinary.com/dudgezs9w/image/upload/v1664485015/ongalkemy_qhhjzl.png",
+      tags: ["Backend", "RESTful API"],
+      github: "https://github.com/Zaniuk/portfolio-backend"
+    },
+    {
       title: "Blog API",
       description:
-        "A simple blog API built with Node.js, Express, MongoDB and Mongoose.",
+        "Blog API built with Node.js, Express, MongoDB and Mongoose. Deploy in Azure.",
       image:
         "https://i.ibb.co/vP8Mg1n/GERONIMO.png",
       tags: ["Backend", "RESTful API"],
@@ -64,20 +73,30 @@ export default function index() {
   ];
   const certifications = [
     {
-      company: "JP Morgan",
-      title: "Paths to the Future",
+      company: "OpenBootcamp",
+      title: "Fullstack Javascript",
       status: "Ongoing",
       description:
-        "Object Oriented Programming. MongoDB, ExpressJS, React, NodeJS, test-driven development, domain driven development.",
+        "SCRUM, GitFlow, MongoDB, ExpressJS, React, MaterialUI, NodeJS.",
       image:
         "https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=750%2C422&strip=all",
     },
+
     {
       company: "OpenBootcamp",
       title: "Java Backend Engineer",
       status: "Ongoing",
       description:
         "OOP, Design Patterns, Git, Spring, REST, Postman, Performance, CLEAN Architecture, SOLID Principles, Clean Code Patterns",
+      image:
+        "https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=750%2C422&strip=all",
+    },
+    {
+      company: "JP Morgan",
+      title: "Paths to the Future",
+      status: "Completed",
+      description:
+        "Object Oriented Programming. MongoDB, ExpressJS, React, NodeJS, test-driven development, domain driven development.",
       image:
         "https://venturebeat.com/wp-content/uploads/2021/05/GettyImages-1291886933-e1624308433688.jpg?fit=750%2C422&strip=all",
     },
