@@ -8,7 +8,6 @@ export default function Home() {
   const [data, setData] = React.useState({});
   const getData = async () => {
     const res = await httpService.get('/home')
-    console.log(res.data)
     setData(res.data)
   }
   React.useEffect(() => {
