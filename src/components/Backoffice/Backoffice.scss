@@ -1,0 +1,11 @@
+.backoffice-items-container{
+    //create a responsive grid 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    //center the grid
+    justify-content: center;
+    //add some padding
+    padding: 1rem;
+    
+}
