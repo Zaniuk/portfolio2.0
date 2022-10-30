@@ -1,6 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { UserContext } from '../Context/UserProvider'
+import { useContext } from 'react'
+
 export default function DesktopNav() {
+  const {user} = useContext(UserContext)
   return (
     <nav className="nav">
       <ul>
@@ -29,6 +33,7 @@ export default function DesktopNav() {
             Contact
           </NavLink>
         </li>
+        {user ? <li> <NavLink to="/backoffice" activeclassname="active">Backoffice</NavLink></li> : null}
       </ul>
     </nav>
   )
