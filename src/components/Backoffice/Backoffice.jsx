@@ -38,7 +38,7 @@ export default function Backoffice() {
         <Typography textAlign='center' component='h2' variant="h3" color='#6b5bd4'>Backoffice</Typography>
     <div className="backoffice-items-container">
       {routes.map((route, index) => (
-        <Box sx={{
+        <Box key={index} sx={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
