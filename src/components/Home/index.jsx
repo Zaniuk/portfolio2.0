@@ -3,7 +3,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./index.scss";
+import httpService from '../../services/httpService';
 export default function Home() {
+  const [data, setData] = React.useState({});
+  const getData = async () => {
+    const res = await httpService.get('/home')
+    console.log(res.data)
+    setData(res.data)
+  }
+  React.useEffect(() => {
+    getData()
+  }, []);
+
   return (
     <div className="landing-wrapper">
       <div className="landing">
@@ -11,7 +22,7 @@ export default function Home() {
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          Hi! <span className="highlight bold">I'm Geronimo Zaniuk</span>,{" "}
+          {data.greeting}
         </motion.h1>
         <motion.h2
           initial={{ opacity: 0, y: -100 }}
@@ -19,18 +30,14 @@ export default function Home() {
           transition={{ delay: 0.3 }}
           className="color-blue bold"
         >
-          A Full-stack Web Developer
+          {data.subtitle}
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
         >
-          Natural <span className="color-blue bold">challenge-seeker</span>, a{" "}
-          <span className="color-blue bold">fast-learner</span> and{" "}
-          <span className="color-blue bold">multidisciplinary</span> person. I'm
-          searching for my first oportunity to work on a software development
-          team.
+          {data.description}
         </motion.p>
         <Link to="/contact">
           <motion.span
