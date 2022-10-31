@@ -27,6 +27,7 @@
     "remark-gfm": "^3.0.1",
     "remark-toc": "^8.0.1",
     "sass": "^1.54.8",
+    "sweetalert2": "^11.6.5",
     "yup": "^0.32.11"
   },
   "devDependencies": {
