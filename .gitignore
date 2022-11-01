@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 ckeditor5/build
+vite*.js
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
