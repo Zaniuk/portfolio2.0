@@ -23,7 +23,7 @@ export default function index() {
   return (
     <motion.div >
         <h1 className="contact-section-title">Let's get in touch!</h1>
-      <form ref={form}  onSubmit={sendEmail}>
+      <form ref={form} className='contact-form'  onSubmit={sendEmail}>
         <label>
           <span>Subject</span>
           <input type="text" name="subject" required placeholder='How can I help you?'/>
