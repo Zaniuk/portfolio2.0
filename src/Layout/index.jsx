@@ -1,16 +1,19 @@
 import React , {useContext} from "react";
 import { UserContext } from "../components/Context/UserProvider";
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import Sidebar from "../components/Navbar";
 import "./index.scss";
 import { motion } from "framer-motion";
-import { CssBaseline } from "@mui/material";
+import { Button, CssBaseline } from "@mui/material";
 import UserBar from "../components/User/UserBar";
+import { ArrowBack } from "@mui/icons-material";
 export default function Layout() {
   const {user} = useContext(UserContext)
+  const navigate = useNavigate()
   return (
     <div className="App">
       <CssBaseline/>
+      
       {user ?
        <>
        <Sidebar />
@@ -24,6 +27,9 @@ export default function Layout() {
            
            transition={{ ease: "easeInOut", duration: 1}}
          >
+          <Button variant="contained" color="secondary" onClick={() => navigate(-1)}>
+        <ArrowBack/>
+      </Button>
            <Outlet />
            <div className="separator"></div>
          </motion.div>
