@@ -3,7 +3,7 @@ import React from 'react'
 import CustomForm from '../../CustomForm'
 import * as yup from "yup";
 import httpService from '../../../../services/httpService'
-import {alert} from '../../../Alert/Alert'
+import {Alert} from '../../../Alert/Alert'
 import projectFields from './Fields';
 import { useNavigate } from 'react-router-dom';
 

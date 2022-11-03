@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import CustomForm from '../../CustomForm'
 import * as yup from "yup";
 import httpService from '../../../../services/httpService'
-import {alert} from '../../../Alert/Alert'
+import { Alert } from '../../../Alert/Alert';
 import { useNavigate, useParams } from 'react-router-dom';
 import projectFields from './Fields';
 import createInitialValues from '../../utils/utils';
@@ -34,12 +34,12 @@ export default function EditProject() {
   const procedure = async (values, actions) => {
     try{
       await httpService.put('/projects/' + id, values)
-      alert("Exitoso!", "Se ha creado el proyecto", "success", false);
+      Alert("Exitoso!", "Se ha creado el proyecto", "success", false);
         navigate('/backoffice/projects')
     }
     catch(err){
       console.log(err)
-      alert("Error", "No se ha borrado el proyecto", "danger", false);
+      Alert("Error", "No se ha borrado el proyecto", "danger", false);
     }   
   }
 

@@ -2,7 +2,7 @@ import { Box } from '@mui/system'
 import React, { useEffect, useState } from 'react'
 import httpService from '../../../../services/httpService'
 import CustomTable from '../../CustomTable'
-import { alert } from '../../../Alert/Alert'
+import { Alert } from '../../../Alert/Alert'
 import { useNavigate } from 'react-router-dom'
 import { Typography } from '@mui/material'
 export default function BackofficeProjects() {
@@ -35,7 +35,7 @@ export default function BackofficeProjects() {
 
           try{
             await httpService.delete('/projects/' + id)            
-            alert("Exitoso!", "Se ha borrado el proyecto", "success", false);
+            Alert("Exitoso!", "Se ha borrado el proyecto", "success", false);
             getData()
           }catch(e){
             console.error(e)

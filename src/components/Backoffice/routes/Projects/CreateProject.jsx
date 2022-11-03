@@ -3,7 +3,7 @@ import React from 'react'
 import CustomForm from '../../CustomForm'
 import * as yup from "yup";
 import httpService from '../../../../services/httpService'
-import {alert} from '../../../Alert/Alert'
+import {Alert} from '../../../Alert/Alert'
 import projectFields from './Fields';
 import { useNavigate } from 'react-router-dom';
 import createInitialValues from '../../utils/utils'
@@ -23,12 +23,12 @@ export default function CreateProject() {
     try{
       console.log(values)
       await httpService.post('/projects', values)
-      alert("Exitoso!", "Se ha creado el proyecto", "success", false);
+      Alert("Exitoso!", "Se ha creado el proyecto", "success", false);
       navigate('/backoffice/projects')
     }
     catch(err){
       console.log(err)
-      alert("Error", "No se ha borrado el proyecto", "danger", false);
+      Alert("Error", "No se ha borrado el proyecto", "danger", false);
     }   
   }
 

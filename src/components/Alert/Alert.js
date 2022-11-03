@@ -1,5 +1,5 @@
 import Swal from "sweetalert2";
-export const alert = (title, text, icon, isShowConfirmButton = true) => {
+export const Alert = (title, text, icon, isShowConfirmButton = true) => {
     Swal.fire({
         title: `${title}`,
         toast: true,
