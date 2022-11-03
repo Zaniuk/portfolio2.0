@@ -20,6 +20,8 @@ import Auth from '../components/Auth'
 import { ThemeProvider, createTheme } from '@mui/material/styles'
 import CreateProject from '../components/Backoffice/routes/Projects/CreateProject'
 import EditProject from '../components/Backoffice/routes/Projects/EditProject'
+import EditCertification from '../components/Backoffice/routes/Certifications/EditCertification'
+import CreateCertification from '../components/Backoffice/routes/Certifications/CreateCertification'
 export default function ExtRouter() {
   const darkTheme = createTheme({
     palette: {
@@ -80,6 +82,14 @@ export default function ExtRouter() {
               <Route path='/backoffice/certifications' element={<Layout/>}>
                 <Route index element={<Auth><BackofficeCertifications/></Auth>} />
               </Route>
+              <Route path='/backoffice/certifications/create' element={<Layout/>}>
+                <Route index element={<Auth><CreateCertification/></Auth>} />
+              </Route>
+              <Route path='/backoffice/certifications/:id' element={<Layout/>}>
+                <Route index element={<Auth><EditCertification/></Auth>} />
+              </Route>
+
+
               <Route path='/backoffice/about' element={<Layout/>}>
                 <Route index element={<Auth><BackofficeAbout/></Auth>} />
               </Route>
