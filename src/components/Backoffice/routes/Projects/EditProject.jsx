@@ -38,9 +38,7 @@ export default function EditProject() {
     try{
       await httpService.put('/projects/' + id, values)
       alert("Exitoso!", "Se ha creado el proyecto", "success", false);
-      setTimeout(() => {
         navigate('/backoffice/projects')
-      }, 3000 )
     }
     catch(err){
       console.log(err)
