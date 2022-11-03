@@ -5,7 +5,9 @@ import * as yup from "yup";
 import httpService from '../../../../services/httpService'
 import {alert} from '../../../Alert/Alert'
 import projectFields from './Fields';
+import { useNavigate } from 'react-router-dom';
 export default function CreateProject() {
+  const navigate = useNavigate()
   const fields = projectFields
   const initialValues = {
     title: '',
@@ -27,6 +29,7 @@ export default function CreateProject() {
       console.log(values)
       await httpService.post('/projects', values)
       alert("Exitoso!", "Se ha creado el proyecto", "success", false);
+      navigate('/backoffice/projects')
     }
     catch(err){
       console.log(err)
