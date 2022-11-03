@@ -6,16 +6,11 @@ import httpService from '../../../../services/httpService'
 import {alert} from '../../../Alert/Alert'
 import projectFields from './Fields';
 import { useNavigate } from 'react-router-dom';
+import createInitialValues from '../../utils/utils'
 export default function CreateProject() {
   const navigate = useNavigate()
   const fields = projectFields
-  const initialValues = {
-    title: '',
-    description: '',
-    image: '',
-    status: 'active',
-    github: '',
-  }
+  const initialValues = createInitialValues(fields)
   const validationSchema = yup.object({
     title: yup.string('Por favor inserte un nombre').required('Required'),
     description: yup.string('Por favor inserte una descripción').required('Required'),

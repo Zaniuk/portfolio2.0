@@ -6,12 +6,15 @@ import httpService from '../../../../services/httpService'
 import {alert} from '../../../Alert/Alert'
 import { useNavigate, useParams } from 'react-router-dom';
 import projectFields from './Fields';
+import createInitialValues from '../../utils/utils';
 export default function EditProject() {
   const {id} = useParams()
   const [data, setData] = React.useState({})
+  const [initData, setInitData] = React.useState({})
   const navigate = useNavigate()
   const getProject = async () => {
     const { data } = await httpService.get(`/projects/${id}`);
+    setInitData(createInitialValues(fields, data))
     setData(data);
   };
   useEffect(() => {
@@ -19,13 +22,7 @@ export default function EditProject() {
   }, []);
   
   const fields = projectFields
-  const initialValues = {
-    title: data?.title || '',
-    description: data.description || '',
-    image:  data?.image || '',
-    status: data?.status || 'active',
-    github: data?.github ||  '',
-  }
+  const initialValues = initData
   const validationSchema = yup.object({
     title: yup.string('Por favor inserte un nombre').required('Required'),
     description: yup.string('Por favor inserte una descripción').required('Required'),
