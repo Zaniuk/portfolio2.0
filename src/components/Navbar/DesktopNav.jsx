@@ -6,7 +6,7 @@ export default function DesktopNav() {
       <ul>
         <li>
           <NavLink to="/" activeclassname="active">
-            Home
+            Inicio
           </NavLink>
         </li>
         <li>
@@ -16,7 +16,7 @@ export default function DesktopNav() {
         </li>
         <li>
           <NavLink to="/about" activeclassname="active">
-            About
+            Acerca
           </NavLink>
         </li>
         <li>
@@ -26,7 +26,7 @@ export default function DesktopNav() {
         </li>
         <li>
           <NavLink to="/contact" activeclassname="active">
-            Contact
+            Contacto
           </NavLink>
         </li>
       </ul>

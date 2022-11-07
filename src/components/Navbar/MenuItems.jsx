@@ -20,7 +20,7 @@ export default function MenuItems({ open }) {
     >
       <motion.li variants={item}>
         <NavLink to="/" activeclassname="active">
-          Home
+          Inicio
         </NavLink>
       </motion.li>
       <motion.li variants={item}>
@@ -30,7 +30,7 @@ export default function MenuItems({ open }) {
       </motion.li>
       <motion.li variants={item}>
         <NavLink to="/about" activeclassname="active">
-          About
+          Acerca
         </NavLink>
       </motion.li>
       <motion.li variants={item}>
@@ -40,7 +40,7 @@ export default function MenuItems({ open }) {
       </motion.li>
       <motion.li variants={item}>
         <NavLink to="/contact" activeclassname="active">
-          Contact
+          Contacto
         </NavLink>
       </motion.li>
     </motion.ul>
