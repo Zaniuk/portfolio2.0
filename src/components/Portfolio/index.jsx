@@ -7,26 +7,35 @@ export default function index() {
   const projectList = [
     {
       title: "ONG Alkemy API",
-      description:
-        "RESTful API made with NodeJS, Express, MySQL and Sequelize. It have JWT-based auth system and form validations.",
+      //description: "RESTful API made with NodeJS, Express, MySQL and Sequelize. It have JWT-based auth system and form validations.",
+      description: "API RESTful hecha con NodeJS, Express, MySQL y Sequelize. Cuenta con sistema de autenticación con JWT y validación de formularios",
       image:
         "/projects/ong.webp",
       tags: ["Backend", "RESTful API"],
-      github: "https://github.com/Zaniuk/portfolio-backend"
+      github: "https://github.com/alkemyTech/OT288-server/tree/dev"
+    },
+    {
+      title: "Portfolio CMS",
+      description:
+        "API RESTful para manejar todo el contenido de mi portfolio de manera dinámica sin tocar el código",
+      image:
+        "/projects/ong.webp",
+      tags: ["Backend", "RESTful API"],
+      github: "https://github.com/Zaniuk/Portfolio-Server"
     },
     {
       title: "Blog API",
       description:
-        "Blog API built with Node.js, Express, MongoDB and Mongoose. Deploy in Azure.",
+        "Sistema de blogging basado en REST. Hecho con NodeJS, Express y MongoDB. Deploy en Azure.",
       image:
         "/projects/GERONIMO.webp",
-      tags: ["Backend", "RESTful API"],
+      tags: ["Backend", "RESTful API", "Azure"],
       github: "https://github.com/Zaniuk/portfolio-backend"
     },
     {
       title: "ABM Bancario",
       description:
-        "A banking system built with React.js, Node.js, Express, PostgreSQL and Sequelize.",
+        "Sistema ABM bancario. Hecho con React, NodeJS, Express, Sequelize y PostgreSQL. Autenticación con JWT.",
       image:
         "/projects/money.webp",
       tags: ["Fullstack", "RESTful API"], 
@@ -36,7 +45,7 @@ export default function index() {
     {
       title: "Anime Recommendations App",
       description:
-        "A simple anime recommendations app built with React.JS.",
+        "WebApp de recomendación de anime. Hecho con React y Pico.css",
       image:
         "/projects/anime.webp",
       tags: ["Frontend", "API"],
@@ -45,7 +54,7 @@ export default function index() {
     {
       title: "React Weather App",
       description:
-        "A simple weather app built with React.js and OpenWeatherMap API.",
+        "WebApp de demostración sobre consumo de APIs en React",
       image:
         "/projects/weather.webp",
       tags: ["Frontend", "API"],
@@ -54,7 +63,7 @@ export default function index() {
     {
       title: "The Wine Valley",
       description:
-        "Static website built with HTML, CSS and JavaScript. Simulates a wine shop.",
+        "Página estática hecha con HTML, CSS y Javascript. Simula una tienda de vinos",
       image:
         "/projects/wine.webp",
       tags: ["Frontend", "Static"],
