@@ -11,7 +11,7 @@ export default function Home() {
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          Hi! <span className="highlight bold">I'm Geronimo Zaniuk</span>,{" "}
+          ¡Hola! Soy <span className="highlight bold">Geronimo Zaniuk</span>,{" "}
         </motion.h1>
         <motion.h2
           initial={{ opacity: 0, y: -100 }}
@@ -19,18 +19,16 @@ export default function Home() {
           transition={{ delay: 0.3 }}
           className="color-blue bold"
         >
-          A Full-stack Web Developer
+          Un desarrollador web fullstack
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
         >
-          Natural <span className="color-blue bold">challenge-seeker</span>, a{" "}
-          <span className="color-blue bold">fast-learner</span> and{" "}
-          <span className="color-blue bold">multidisciplinary</span> person. I'm
-          searching for my first oportunity to work on a software development
-          team.
+          Entusiasta de todo lo relacionado con el desarrollo web. 
+          Principalmente autodidacta y he estado perfeccionando mis habilidades durante mas de dos años.
+          Tengo experiencia en la creación de aplicaciones web desde cero y siempre me emociona aprender nuevas tecnologías.
         </motion.p>
         <Link to="/contact">
           <motion.span
