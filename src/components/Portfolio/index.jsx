@@ -19,7 +19,7 @@ export default function index() {
       description:
         "API RESTful para manejar todo el contenido de mi portfolio de manera dinámica sin tocar el código",
       image:
-        "/projects/ong.webp",
+        "/projects/cms.webp",
       tags: ["Backend", "RESTful API"],
       github: "https://github.com/Zaniuk/Portfolio-Server"
     },
