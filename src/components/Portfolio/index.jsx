@@ -10,7 +10,7 @@ export default function index() {
       description:
         "RESTful API made with NodeJS, Express, MySQL and Sequelize. It have JWT-based auth system and form validations.",
       image:
-        "https://res.cloudinary.com/dudgezs9w/image/upload/v1664485015/ongalkemy_qhhjzl.png",
+        "/projects/ong.webp",
       tags: ["Backend", "RESTful API"],
       github: "https://github.com/Zaniuk/portfolio-backend"
     },
@@ -19,25 +19,16 @@ export default function index() {
       description:
         "Blog API built with Node.js, Express, MongoDB and Mongoose. Deploy in Azure.",
       image:
-        "https://i.ibb.co/vP8Mg1n/GERONIMO.png",
+        "/projects/GERONIMO.webp",
       tags: ["Backend", "RESTful API"],
       github: "https://github.com/Zaniuk/portfolio-backend"
     },
-    // {
-    //   title: "Udemy Free Course Notifier",
-    //   description:
-    //     "A simple app that notifies you when a course you're interested in goes free on Udemy.",
-    //   image:
-    //     "https://i.pinimg.com/originals/84/34/0d/84340dfa0ee08fec0ab5b573f4716221.jpg",
-    //   tags: ["Backend", "Tooling"],
-    //   github: "https://github.com/Zaniuk/AlkemyChallenge"
-    // },
     {
       title: "ABM Bancario",
       description:
         "A banking system built with React.js, Node.js, Express, PostgreSQL and Sequelize.",
       image:
-        "https://www.ubackground.com/_ph/2/617246434.jpg",
+        "/projects/money.webp",
       tags: ["Fullstack", "RESTful API"], 
       github: "https://github.com/Zaniuk/AlkemyChallenge"
     },
@@ -47,7 +38,7 @@ export default function index() {
       description:
         "A simple anime recommendations app built with React.JS.",
       image:
-        "https://i1.sndcdn.com/artworks-000630799198-kqinmt-t500x500.jpg",
+        "/projects/anime.webp",
       tags: ["Frontend", "API"],
       github: "https://github.com/Zaniuk/Anime-App"
     },
@@ -56,7 +47,7 @@ export default function index() {
       description:
         "A simple weather app built with React.js and OpenWeatherMap API.",
       image:
-        "http://store-images.s-microsoft.com/image/apps.10595.14397430983184912.cfdf6f70-0a34-4999-b494-936559d822c3.7355576f-baf9-4be3-8b34-27bdc6ac1bd2",
+        "/projects/weather.webp",
       tags: ["Frontend", "API"],
       github: "https://github.com/Zaniuk/WeatherReactApp"
     },
@@ -65,7 +56,7 @@ export default function index() {
       description:
         "Static website built with HTML, CSS and JavaScript. Simulates a wine shop.",
       image:
-        "https://wallpaperaccess.com/full/468014.jpg",
+        "/projects/wine.webp",
       tags: ["Frontend", "Static"],
       github: "https://github.com/Zaniuk/TiendaVinos"
     },  
