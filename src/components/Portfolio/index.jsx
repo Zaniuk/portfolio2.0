@@ -146,8 +146,9 @@ export default function index() {
         </div>
       </section>
       <section>
+        <hr/>
         <h1 className="section-title">Certifications</h1>
-
+        <hr/>
             <div className="cert-wrapper">
               {certifications.map((cert, index) => {
                 return (
