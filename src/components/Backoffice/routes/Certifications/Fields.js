@@ -17,7 +17,7 @@ const certificationFields = [
     {
         name: 'image',
         label: 'Image',
-        type: 'image',
+        type: 'file',
     }
 ]
 

@@ -3,9 +3,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./index.scss";
+import parse from "html-react-parser";
 import httpService from '../../services/httpService';
 export default function Home() {
-  const [data, setData] = React.useState({});
+  const [data, setData] = React.useState();
   const getData = async () => {
     const res = await httpService.get('/home')
     setData(res.data)
@@ -17,32 +18,19 @@ export default function Home() {
   return (
     <div className="landing-wrapper">
       <div className="landing">
-        <motion.h1
-          initial={{ opacity: 0, y: -100 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          {data.greeting}
-        </motion.h1>
-        <motion.h2
-          initial={{ opacity: 0, y: -100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
-          className="color-blue bold"
-        >
-          {data.subtitle}
-        </motion.h2>
+       
         <motion.p
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
+          transition={{ delay: 0.2 }}
         >
-          {data.description}
+          {data && parse(data.description)}
         </motion.p>
         <Link to="/contact">
           <motion.span
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.9 }}
+            transition={{ delay: 0.3 }}
           >
             <motion.button
               className="contact-button"
