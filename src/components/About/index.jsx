@@ -11,7 +11,7 @@ export default function index() {
         animate={{ x: 0, opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.5 }}
       >
-        <h1>About me</h1>
+        <h1>Un poco acerca de mí</h1>
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -34,7 +34,7 @@ export default function index() {
         animate={{ x: 0, opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.5, delay: 0.5 }}
       >
-        <h1>Why me?</h1>
+        <h1>¿Por qué yo?</h1>
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -52,19 +52,20 @@ export default function index() {
         animate={{ x: 0, opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.5, delay: 1 }}
       >
-        <h1>What makes me different?</h1>
+        <h1>¿Qué me hace diferente?</h1>
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ ease: "easeInOut", duration: 1.5, delay: 1.5 }}
         >
-          Algo que me diferencia del resto es mi capacidad de aprender,
-          tanto de forma autodidacta como de forma más formal, prueba de ello es que
-          se han estado moviendo a través de diferentes campos de la tecnología, tales como
-          soporte técnico de computadores, venta de insumos tecnológicos, y
-          mantenimiento de máquinas industriales (CNC). Estoy seguro de que mi
-          capacidad de aprendizaje, adaptabilidad rápida, compromiso y ambiciones de
-          crecimiento me convierten en el mejor candidato para su equipo.
+          Algo que me diferencia del resto es mi capacidad de aprender, tanto de
+          forma autodidacta como de forma más formal, prueba de ello es que se
+          han estado moviendo a través de diferentes campos de la tecnología,
+          tales como soporte técnico de computadores, venta de insumos
+          tecnológicos, y mantenimiento de máquinas industriales (CNC). Estoy
+          seguro de que mi capacidad de aprendizaje, adaptabilidad rápida,
+          compromiso y ambiciones de crecimiento me convierten en el mejor
+          candidato para su equipo.
         </motion.p>
       </motion.article>
     </section>
