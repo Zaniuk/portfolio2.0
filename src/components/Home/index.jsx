@@ -44,7 +44,7 @@ export default function Home() {
                 transition: { type: "spring", stiffness: 300, bounce: 0.5 },
               }}
             >
-              Contact Me
+              ¡Charlemos!
             </motion.button>
           </motion.span>
         </Link>

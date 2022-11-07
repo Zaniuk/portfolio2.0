@@ -22,14 +22,14 @@ export default function index() {
 
   return (
     <motion.div >
-        <h1 className="contact-section-title">Let's get in touch!</h1>
+        <h1 className="contact-section-title">¡Charlemos!</h1>
       <form ref={form}  onSubmit={sendEmail}>
         <label>
-          <span>Subject</span>
+          <span>Sujeto</span>
           <input type="text" name="subject" required placeholder='How can I help you?'/>
         </label>
         <label>
-          <span>Name</span>
+          <span>Nombre</span>
           <input type="text" name="user_name" required placeholder='Put your beautiful name here'/>
         </label>
         <label>
@@ -37,7 +37,7 @@ export default function index() {
           <input type="email" name="user_email" required placeholder={`I'll get in contact soon`} />
         </label>
         <label>
-          <span>Message</span>
+          <span>Mensaje</span>
           <textarea name="user_message" id="" placeholder="Tell me more about"></textarea>
         </label>
         <label> 
@@ -53,7 +53,7 @@ export default function index() {
               padding: '1.5rem 10rem'
             }}
             transition={{duration: 0.35}}
-             type="submit">Send</motion.button>
+             type="submit">Enviar</motion.button>
           </div>
         </label>
       </form>
