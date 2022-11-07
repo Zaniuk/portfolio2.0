@@ -26,9 +26,8 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
         >
-          Entusiasta de todo lo relacionado con el desarrollo web. 
-          Principalmente autodidacta y he estado perfeccionando mis habilidades durante mas de dos años.
-          Tengo experiencia en la creación de aplicaciones web desde cero y siempre me emociona aprender nuevas tecnologías.
+          <span className="color-blue bold">Autodidacta</span>, ambicioso y <span className="color-blue bold">entusiasta de los desafíos.</span> <br />
+          Tengo experiencia creando aplicaciones web desde cero, <span className="color-blue bold">desde el diseño de arquitectura hasta UI/UX</span>. 
         </motion.p>
         <Link to="/contact">
           <motion.span

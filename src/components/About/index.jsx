@@ -5,9 +5,9 @@ import UserPicture from "./UserPicture";
 export default function index() {
   return (
     <section className="about">
-      <UserPicture/>
+      <UserPicture />
       <motion.article
-        initial={{ x: -500 , opacity: 0}}
+        initial={{ x: -500, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.5 }}
       >
@@ -17,20 +17,20 @@ export default function index() {
           animate={{ opacity: 1 }}
           transition={{ ease: "easeInOut", duration: 1.5, delay: 0.5 }}
         >
-          My path in technology started when I was 4 years old, when I was given
-          a HP Pavilio 7910 PC. With that machine that accompained me until I
-          reached my teens, I discovered the Internet, and the world of hardware
-          and programming, learning HTML, CSS and Python. Since 2018 I work as
-          freelance and self-employed computer technical support. In 2021 I
-          intend to dedicate myself to fully studying programming, something
-          that I'm passionate about and motivates me every day to continue
-          learning more and more. Today I would say that my main language is
-          JavaScript but I'm open to new languages and technologies.
+          Mi camino en la tecnología empezó a los 4 años, cuando me regalaron
+          una PC HP Pavilion 7910. Con esa máquina que me acompañó hasta llegar
+          a mi adolescencia descubrí el internet y el mundo del hardware y de la
+          programación, aprendiendo HTML, CSS y Python. Desde 2018 que trabajo
+          freelance como soporte técnico de computadoras. En 2021 me propuse
+          dedicarme de lleno a estudiar programación, algo que me apasiona y me
+          motiva día a día a seguir aprendiendo más y más. A día de hoy diría
+          que mi lenguaje de dominio principal es JavaScript pero estoy abierto
+          a nuevos lenguajes y tecnologías.
         </motion.p>
       </motion.article>
 
       <motion.article
-        initial={{ x: -500 , opacity: 0}}
+        initial={{ x: -500, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.5, delay: 0.5 }}
       >
@@ -40,16 +40,15 @@ export default function index() {
           animate={{ opacity: 1 }}
           transition={{ ease: "easeInOut", duration: 1.5, delay: 1 }}
         >
-          I am a self-taught person, who does not find it difficult to ask or
-          help his colleagues. I tend to take many initiatives, learn quickly, I
-          have knowledge of SCRUM and KANBAN. I am passionate about constantly
-          learning and solving problems and everything I do is done with the
-          passion and ambition to grow as a person and as a professional.
+          Soy una persona autodidacta, que no le cuesta preguntar o ayudar a sus
+          compañeros. Suelo tomar mucho las iniciativas, aprendo rápido, tengo
+          conocimientos de SCRUM y KANBAN. Me apasiona estar costantemente
+          aprendiendo, resolviendo problemas y brindando soluciones.
         </motion.p>
       </motion.article>
 
       <motion.article
-        initial={{ x: -500 , opacity: 0}}
+        initial={{ x: -500, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.5, delay: 1 }}
       >
@@ -59,13 +58,13 @@ export default function index() {
           animate={{ opacity: 1 }}
           transition={{ ease: "easeInOut", duration: 1.5, delay: 1.5 }}
         >
-          Something that sets me apart from the rest is my ability to learn,
-          both self-taught and in a more formal way, proof of this is that I
-          have been moving through different fields of technology, such as
-          technical support for computers, sale of technological supplies, and
-          maintenance of industrial machines (CNC). I am confident that my
-          learning abilities, quick adaptability, commitment and ambitions for
-          growth make me the best candidate for your team.
+          Algo que me diferencia del resto es mi capacidad de aprender,
+          tanto de forma autodidacta como de forma más formal, prueba de ello es que
+          se han estado moviendo a través de diferentes campos de la tecnología, tales como
+          soporte técnico de computadores, venta de insumos tecnológicos, y
+          mantenimiento de máquinas industriales (CNC). Estoy seguro de que mi
+          capacidad de aprendizaje, adaptabilidad rápida, compromiso y ambiciones de
+          crecimiento me convierten en el mejor candidato para su equipo.
         </motion.p>
       </motion.article>
     </section>
