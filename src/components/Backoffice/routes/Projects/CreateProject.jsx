@@ -17,6 +17,7 @@ export default function CreateProject() {
     image: yup.string('Por favor inserte una imagen'),
     github: yup.string('Por favor inserte un github').required('Required'),
     status: yup.string('Por favor inserte un status').required('Required'),
+    //tags: yup.array('Por favor inserte un tag').required('Required'),
   })
 
   const procedure = async (values, actions) => {

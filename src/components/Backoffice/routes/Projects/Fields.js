@@ -8,7 +8,12 @@ const projectFields = [
         name: 'github',
         label: 'Github',
         type: 'text',
-      },    
+      },
+      {
+        name: 'tags',
+        label: 'Tags',
+        type: 'multi',
+      },
       {
         name: 'status',
         label: 'Status',
