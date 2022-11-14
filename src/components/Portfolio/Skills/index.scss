@@ -18,8 +18,44 @@
     margin: 0;
 }
 .skills{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-gap: .3rem;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 
+    // grid-gap: .3rem;
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 1.3rem;
+    
+    
+    .hide{
+        display: none;
+    }
+    
+}
+.skills-buttons{
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+    button{
+        padding: .3rem;
+        border: none;
+        border-radius: 5px;
+        background-color: #0496FF;
+        color: #fff;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        &:hover{
+            background-color: #6b5bd4 ;
+            color: #fff;
+        }
+        &:focus{
+            background-color: #6b5bd4 ;
+            color: #fff;
+        }
+    }
 }

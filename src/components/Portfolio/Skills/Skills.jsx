@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SkillCard from './SkillCard'
 import {DiReact} from 'react-icons/di'
 import {DiJavascript1} from 'react-icons/di'
@@ -17,33 +17,99 @@ import {SiGit} from 'react-icons/si'
 import {SiJava} from 'react-icons/si'
 import {SiSpring} from 'react-icons/si'
 import {SiAzuredevops} from 'react-icons/si'
-
-
+import { useRef } from 'react'
 
 
 export default function Skills() {
+  const showAll = (e) => {
+    const elements = parent.current.children
+    for (let i = 0; i < elements.length; i++) {
+      if (elements[i].classList.contains('hide')) {
+        elements[i].classList.remove('hide')
+      }}
+      console.log(e.target)
+  }
+  const filterFrontend = () => {
+    const elements = parent.current.children
+    for (let i = 0; i < elements.length; i++) {
+      if (elements[i].classList.contains('hide')) {
+        elements[i].classList.remove('hide')
+      }}
+    for (let i = 0; i < elements.length; i++) {
+      if(!elements[i].classList.contains('frontend')) {
+        elements[i].classList.add('hide')
+      }
+    }
+  }
+  const filterBackend = () => {
+    const elements = parent.current.children
+    for (let i = 0; i < elements.length; i++) {
+      if (elements[i].classList.contains('hide')) {
+        elements[i].classList.remove('hide')
+      }}
+    for (let i = 0; i < elements.length; i++) {
+      if(!elements[i].classList.contains('backend')) {
+        elements[i].classList.add('hide')
+      }
+    }
+  }
+  const filterDatabase = () => {
+    const elements = parent.current.children
+    for (let i = 0; i < elements.length; i++) {
+      if (elements[i].classList.contains('hide')) {
+        elements[i].classList.remove('hide')
+      }}
+    for (let i = 0; i < elements.length; i++) {
+      if(!elements[i].classList.contains('database')) {
+        elements[i].classList.add('hide')
+      }
+    }
+  }
+  const filterTool = () => {
+    const elements = parent.current.children
+    for (let i = 0; i < elements.length; i++) {
+      if (elements[i].classList.contains('hide')) {
+        elements[i].classList.remove('hide')
+      }}
+    for (let i = 0; i < elements.length; i++) {
+      if(!elements[i].classList.contains('tool')) {
+        elements[i].classList.add('hide')
+      }
+    }
+  }
+  const parent = useRef(null)
+
   return (
-    <div className="skills">
-        <SkillCard icon={<DiReact />} color="#347CC4" name={"React.js"}/>
-        <SkillCard icon={<DiJavascript1 />} color="#F3DC4C" name={"Javascript"}/>
-        <SkillCard icon={<SiTypescript />} color="#347CC4" name={"Typescript"}/>
-        <SkillCard icon={<SiExpress />} color="#6BA75C" name={"Express.js"}/>
-        <SkillCard icon={<SiMongodb />} color="#6BA75C" name={"MongoDB"}/>
-        <SkillCard icon={<SiPostgresql />}  color="#347CC4" name={"PostgreSQL"}/>
-        <SkillCard icon={<SiMysql />} color="#D58B24" name={"MySQL"}/>
-        <SkillCard icon={<DiNodejs />} color="#6BA75C" name={"Node.js"}/>
-        <SkillCard icon={<SiHtml5 />} color="#D58B24" name={"HTML5"}/>
-        <SkillCard icon={<SiCss3 />} color="#347CC4"  name={"CSS3"}/>
-        <SkillCard icon={<SiSass />} color="#D47CA7" name={"SASS"}/>
-        <SkillCard icon={<SiMaterialui />} color="#047CFC" name={"Material UI"}/>
-        <SkillCard icon={<DiPython />} name={"Python"}/>
-        <SkillCard icon={<SiFastapi />}  color="#049C8C  " name={"FastAPI"}/>
-        <SkillCard icon={<TbTestPipe2 /> } color="#DB3509" name={"SQLAlchemy"}/>
-        <SkillCard icon={<SiVisualstudiocode />} color="#347CC4" name={"VSCode"}/>
-        <SkillCard icon={<SiGit />} color="#D58B24" name={"Git"}/>
-        <SkillCard icon={<SiJava />} color="#DB3509" name={"Java"}/>
-        <SkillCard icon={<SiSpring />} color="#6BA75C" name={"Spring"}/>
-        <SkillCard icon={<SiAzuredevops />} color="#347CC4" name={"Azure"}/>
+    <>
+    <div className='skills-buttons'>
+    <button onClick={(e) => showAll()} className='skills-buttons__button'>Todo</button>
+      <button onClick={() => filterFrontend()} className='skills-buttons__button'>Frontend</button>
+      <button  onClick={() => filterBackend()} className='skills-buttons__button'>Backend</button>
+      <button onClick={() => filterDatabase()} className='skills-buttons__button'>Bases de datos</button>
+      <button onClick={() => filterTool()} className='skills-buttons__button'>Herramientas</button>
     </div>
+    <div ref={parent} className="skills">
+        <SkillCard classList="frontend" icon={<DiReact />} color="#347CC4" name={"React.js"}/>
+        <SkillCard classList="frontend" icon={<DiJavascript1 />} color="#F3DC4C" name={"Javascript"}/>
+        <SkillCard classList="frontend" icon={<SiTypescript />} color="#347CC4" name={"Typescript"}/>
+        <SkillCard classList="backend" icon={<SiExpress />} color="#6BA75C" name={"Express.js"}/>
+        <SkillCard classList="database backend" icon={<SiMongodb />} color="#6BA75C" name={"MongoDB"}/>
+        <SkillCard classList="database backend" icon={<SiPostgresql />}  color="#347CC4" name={"PostgreSQL"}/>
+        <SkillCard classList="database backend" icon={<SiMysql />} color="#D58B24" name={"MySQL"}/>
+        <SkillCard classList="backend" icon={<DiNodejs />} color="#6BA75C" name={"Node.js"}/>
+        <SkillCard classList="frontend" icon={<SiHtml5 />} color="#D58B24" name={"HTML5"}/>
+        <SkillCard classList="frontend" icon={<SiCss3 />} color="#347CC4"  name={"CSS3"}/>
+        <SkillCard classList="frontend" icon={<SiSass />} color="#D47CA7" name={"SASS"}/>
+        <SkillCard classList="frontend" icon={<SiMaterialui />} color="#047CFC" name={"Material UI"}/>
+        <SkillCard classList="backend" icon={<DiPython />} name={"Python"}/>
+        <SkillCard classList="backend" icon={<SiFastapi />}  color="#049C8C  " name={"FastAPI"}/>
+        <SkillCard classList="database backend" icon={<TbTestPipe2 /> } color="#DB3509" name={"SQLAlchemy"}/>
+        <SkillCard classList="tool" icon={<SiVisualstudiocode />} color="#347CC4" name={"VSCode"}/>
+        <SkillCard classList="tool" icon={<SiGit />} color="#D58B24" name={"Git"}/>
+        <SkillCard classList="backend" icon={<SiJava />} color="#DB3509" name={"Java"}/>
+        <SkillCard classList="backend" icon={<SiSpring />} color="#6BA75C" name={"Spring"}/>
+        <SkillCard classList="tool" icon={<SiAzuredevops />} color="#347CC4" name={"Azure"}/>
+    </div>
+    </>
   )
 }
