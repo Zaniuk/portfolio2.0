@@ -3,6 +3,7 @@ import "./index.scss";
 import { motion } from "framer-motion";
 import Card from "./Card";
 import Certification from "./Certification";
+import Skills from "./Skills/Skills";
 export default function index() {
   const projectList = [
     {
@@ -130,8 +131,12 @@ export default function index() {
   ];
   return (
     <>
+    <section className="skills-section">
+      <h1 className="section-title">Tecnologías</h1>
+      <Skills/>
+    </section>
       <section className="projects">
-        <h1 className="section-title">Projects</h1>
+        <h1 className="section-title">Proyectos</h1>
         <div className="projects-container">
           {projectList.map((project, index) => (
             <Card
@@ -147,7 +152,7 @@ export default function index() {
       </section>
       <section>
         <hr/>
-        <h1 className="section-title">Certifications</h1>
+        <h1 className="section-title">Certificaciones</h1>
         <hr/>
             <div className="cert-wrapper">
               {certifications.map((cert, index) => {
