@@ -21,13 +21,12 @@ import { useRef } from 'react'
 
 
 export default function Skills() {
-  const showAll = (e) => {
+  const showAll = () => {
     const elements = parent.current.children
     for (let i = 0; i < elements.length; i++) {
       if (elements[i].classList.contains('hide')) {
         elements[i].classList.remove('hide')
       }}
-      console.log(e.target)
   }
   const filterFrontend = () => {
     const elements = parent.current.children
@@ -82,7 +81,7 @@ export default function Skills() {
   return (
     <>
     <div className='skills-buttons'>
-    <button onClick={(e) => showAll()} className='skills-buttons__button'>Todo</button>
+    <button onClick={() => showAll()} className='skills-buttons__button'>Todo</button>
       <button onClick={() => filterFrontend()} className='skills-buttons__button'>Frontend</button>
       <button  onClick={() => filterBackend()} className='skills-buttons__button'>Backend</button>
       <button onClick={() => filterDatabase()} className='skills-buttons__button'>Bases de datos</button>
