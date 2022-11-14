@@ -87,27 +87,29 @@ export default function Skills() {
       <button onClick={() => filterDatabase()} className='skills-buttons__button'>Bases de datos</button>
       <button onClick={() => filterTool()} className='skills-buttons__button'>Herramientas</button>
     </div>
-    <div ref={parent} className="skills">
-        <SkillCard classList="frontend" icon={<DiReact />} color="#347CC4" name={"React.js"}/>
-        <SkillCard classList="frontend" icon={<DiJavascript1 />} color="#F3DC4C" name={"Javascript"}/>
-        <SkillCard classList="frontend" icon={<SiTypescript />} color="#347CC4" name={"Typescript"}/>
-        <SkillCard classList="backend" icon={<SiExpress />} color="#6BA75C" name={"Express.js"}/>
-        <SkillCard classList="database backend" icon={<SiMongodb />} color="#6BA75C" name={"MongoDB"}/>
-        <SkillCard classList="database backend" icon={<SiPostgresql />}  color="#347CC4" name={"PostgreSQL"}/>
-        <SkillCard classList="database backend" icon={<SiMysql />} color="#D58B24" name={"MySQL"}/>
-        <SkillCard classList="backend" icon={<DiNodejs />} color="#6BA75C" name={"Node.js"}/>
-        <SkillCard classList="frontend" icon={<SiHtml5 />} color="#D58B24" name={"HTML5"}/>
-        <SkillCard classList="frontend" icon={<SiCss3 />} color="#347CC4"  name={"CSS3"}/>
-        <SkillCard classList="frontend" icon={<SiSass />} color="#D47CA7" name={"SASS"}/>
-        <SkillCard classList="frontend" icon={<SiMaterialui />} color="#047CFC" name={"Material UI"}/>
-        <SkillCard classList="backend" icon={<DiPython />} name={"Python"}/>
-        <SkillCard classList="backend" icon={<SiFastapi />}  color="#049C8C  " name={"FastAPI"}/>
-        <SkillCard classList="database backend" icon={<TbTestPipe2 /> } color="#DB3509" name={"SQLAlchemy"}/>
-        <SkillCard classList="tool" icon={<SiVisualstudiocode />} color="#347CC4" name={"VSCode"}/>
-        <SkillCard classList="tool" icon={<SiGit />} color="#D58B24" name={"Git"}/>
-        <SkillCard classList="backend" icon={<SiJava />} color="#DB3509" name={"Java"}/>
-        <SkillCard classList="backend" icon={<SiSpring />} color="#6BA75C" name={"Spring"}/>
-        <SkillCard classList="tool" icon={<SiAzuredevops />} color="#347CC4" name={"Azure"}/>
+    <div className="skills-wrapper">
+      <div ref={parent} className="skills">
+          <SkillCard classList="frontend" icon={<DiReact />} color="#347CC4" name={"React.js"}/>
+          <SkillCard classList="frontend" icon={<DiJavascript1 />} color="#F3DC4C" name={"Javascript"}/>
+          <SkillCard classList="frontend" icon={<SiTypescript />} color="#347CC4" name={"Typescript"}/>
+          <SkillCard classList="backend" icon={<SiExpress />} color="#6BA75C" name={"Express.js"}/>
+          <SkillCard classList="database backend" icon={<SiMongodb />} color="#6BA75C" name={"MongoDB"}/>
+          <SkillCard classList="database backend" icon={<SiPostgresql />}  color="#347CC4" name={"PostgreSQL"}/>
+          <SkillCard classList="database backend" icon={<SiMysql />} color="#D58B24" name={"MySQL"}/>
+          <SkillCard classList="backend" icon={<DiNodejs />} color="#6BA75C" name={"Node.js"}/>
+          <SkillCard classList="frontend" icon={<SiHtml5 />} color="#D58B24" name={"HTML5"}/>
+          <SkillCard classList="frontend" icon={<SiCss3 />} color="#347CC4"  name={"CSS3"}/>
+          <SkillCard classList="frontend" icon={<SiSass />} color="#D47CA7" name={"SASS"}/>
+          <SkillCard classList="frontend" icon={<SiMaterialui />} color="#047CFC" name={"Material UI"}/>
+          <SkillCard classList="backend" icon={<DiPython />} name={"Python"}/>
+          <SkillCard classList="backend" icon={<SiFastapi />}  color="#049C8C  " name={"FastAPI"}/>
+          <SkillCard classList="database backend" icon={<TbTestPipe2 /> } color="#DB3509" name={"SQLAlchemy"}/>
+          <SkillCard classList="tool" icon={<SiVisualstudiocode />} color="#347CC4" name={"VSCode"}/>
+          <SkillCard classList="tool" icon={<SiGit />} color="#D58B24" name={"Git"}/>
+          <SkillCard classList="backend" icon={<SiJava />} color="#DB3509" name={"Java"}/>
+          <SkillCard classList="backend" icon={<SiSpring />} color="#6BA75C" name={"Spring"}/>
+          <SkillCard classList="tool" icon={<SiAzuredevops />} color="#347CC4" name={"Azure"}/>
+      </div>
     </div>
     </>
   )
