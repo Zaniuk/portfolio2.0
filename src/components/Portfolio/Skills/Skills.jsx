@@ -22,6 +22,7 @@ import {
   SiDigitalocean,
   SiLinux,
 } from "react-icons/si";
+import {TbTestPipe2} from 'react-icons/tb';
 import { useRef } from "react";
 
 export default function Skills() {
