@@ -12,11 +12,16 @@ import {SiCss3} from 'react-icons/si'
 import {SiSass} from 'react-icons/si'
 import {SiMaterialui, SiFastapi, SiTypescript} from 'react-icons/si'
 import {TbTestPipe2} from 'react-icons/tb'
-import {SiVisualstudiocode} from 'react-icons/si'
+
 import {SiGit} from 'react-icons/si'
 import {SiJava} from 'react-icons/si'
 import {SiSpring} from 'react-icons/si'
 import {SiAzuredevops} from 'react-icons/si'
+import {SiDocker} from 'react-icons/si'
+import {SiTerraform} from 'react-icons/si'
+import {SiDigitalocean} from 'react-icons/si'
+// Linux
+import {SiLinux} from 'react-icons/si'
 import { useRef } from 'react'
 
 
@@ -104,11 +109,14 @@ export default function Skills() {
           <SkillCard classList="backend" icon={<DiPython />} name={"Python"}/>
           <SkillCard classList="backend" icon={<SiFastapi />}  color="#049C8C  " name={"FastAPI"}/>
           <SkillCard classList="database backend" icon={<TbTestPipe2 /> } color="#DB3509" name={"SQLAlchemy"}/>
-          <SkillCard classList="tool" icon={<SiVisualstudiocode />} color="#347CC4" name={"VSCode"}/>
+          <SkillCard classList="tool" icon={<SiDocker />} color="#347CC4" name={"Docker"}/>
           <SkillCard classList="tool" icon={<SiGit />} color="#D58B24" name={"Git"}/>
           <SkillCard classList="backend" icon={<SiJava />} color="#DB3509" name={"Java"}/>
           <SkillCard classList="backend" icon={<SiSpring />} color="#6BA75C" name={"Spring"}/>
           <SkillCard classList="tool" icon={<SiAzuredevops />} color="#347CC4" name={"Azure"}/>
+          <SkillCard classList="tool" icon={<SiTerraform />} color="#5744dc" name={"Terraform"}/>
+          <SkillCard classList="tool" icon={<SiDigitalocean />} color="#347CC4" name={"Digital Ocean"}/>
+          <SkillCard classList="tool" icon={<SiLinux />} name={"Linux"}/>
       </div>
     </div>
     </>
