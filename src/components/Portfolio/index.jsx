@@ -50,7 +50,8 @@ export default function index() {
       image:
         "/projects/anime.webp",
       tags: ["Frontend", "API"],
-      github: "https://github.com/Zaniuk/Anime-App"
+      github: "https://github.com/Zaniuk/Anime-App",
+      demo: "https://anime.zaniuk.tech/"
     },
     {
       title: "React Weather App",
@@ -59,7 +60,8 @@ export default function index() {
       image:
         "/projects/weather.webp",
       tags: ["Frontend", "API"],
-      github: "https://github.com/Zaniuk/WeatherReactApp"
+      github: "https://github.com/Zaniuk/WeatherReactApp",
+      demo: "https://weather.zaniuk.tech/"
     },
     {
       title: "The Wine Valley",
@@ -68,7 +70,8 @@ export default function index() {
       image:
         "/projects/wine.webp",
       tags: ["Frontend", "Static"],
-      github: "https://github.com/Zaniuk/TiendaVinos"
+      github: "https://github.com/Zaniuk/TiendaVinos",
+      demo: "https://wine.zaniuk.tech/"
     },  
    
   ];
@@ -145,6 +148,7 @@ export default function index() {
               image={project.image}
               tags={project.tags}
               github={project.github}
+              demo={project.demo}
               key={`project-${index}`}
             />
           ))}

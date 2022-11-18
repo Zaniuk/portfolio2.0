@@ -2,7 +2,7 @@ import React, {useRef} from "react";
 import "./Card.scss";
 import { motion, useInView } from "framer-motion";
 import Tags from "./Tags";
-export default function Card({ title, description, image, tags, github }) {
+export default function Card({ title, description, image, tags, github, demo}) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
@@ -22,13 +22,22 @@ export default function Card({ title, description, image, tags, github }) {
         <Tags tags={tags} />
         <h4>{title}</h4>
         <p>{description}</p>
-        <a href={github} className="project-link">
-          <motion.button
-          initial={{scale: 1}}
-          whileHover={{scale: 1.2}}
-          transition={{type: "spring", stiffness: 300, bounce: 0.5}}
-          className="project-button-link">Github</motion.button>
-        </a>
+        <div>
+          <a href={github} className="project-link">
+            <motion.button
+            initial={{scale: 1}}
+            whileHover={{scale: 1.2}}
+            transition={{type: "spring", stiffness: 300, bounce: 0.5}}
+            className="project-button-link">Github</motion.button>
+          </a>
+          <a href={demo} className="project-link">
+            <motion.button
+            initial={{scale: 1}}
+            whileHover={{scale: 1.2}}
+            transition={{type: "spring", stiffness: 300, bounce: 0.5}}
+            className="project-button-link">Demo</motion.button>
+          </a>
+        </div>
       </div>
     </div>
   );
