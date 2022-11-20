@@ -1,13 +1,22 @@
-.projects-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-items: center;
-    gap: 1rem;
-  }
-  .section-title{
-    text-transform: uppercase;
-    color: #6b5bd4;
-    text-align: center;
-    font-size: 3rem;
-    margin:  1.5rem 0;
-  }
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  gap: 1rem;
+}
+.section-title {
+  text-transform: uppercase;
+  color: #6b5bd4;
+  text-align: center;
+  font-size: 3rem;
+  margin: 1.5rem 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #9689eb;
+  margin: 1em 0;
+  padding: 0;
+}
