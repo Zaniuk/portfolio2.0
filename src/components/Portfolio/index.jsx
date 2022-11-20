@@ -31,7 +31,7 @@ export default function index() {
       image:
         "/projects/GERONIMO.webp",
       tags: ["Backend", "RESTful API", "Azure"],
-      github: "https://github.com/Zaniuk/portfolio-backend"
+      github: "https://github.com/Zaniuk/portfolio-backend",
     },
     {
       title: "ABM Bancario",
@@ -40,7 +40,8 @@ export default function index() {
       image:
         "/projects/money.webp",
       tags: ["Fullstack", "RESTful API"], 
-      github: "https://github.com/Zaniuk/AlkemyChallenge"
+      github: "https://github.com/Zaniuk/AlkemyChallenge",
+      demo: "https://abm.zaniuk.tech/"
     },
 
     {
@@ -71,7 +72,7 @@ export default function index() {
         "/projects/wine.webp",
       tags: ["Frontend", "Static"],
       github: "https://github.com/Zaniuk/TiendaVinos",
-      demo: "https://wine.zaniuk.tech/"
+      demo: "https://winevalley.zaniuk.tech/"
     },  
    
   ];

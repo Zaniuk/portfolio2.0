@@ -30,13 +30,13 @@ export default function Card({ title, description, image, tags, github, demo}) {
             transition={{type: "spring", stiffness: 300, bounce: 0.5}}
             className="project-button-link">Github</motion.button>
           </a>
-          <a href={demo} className="project-link">
+          {demo && <a href={demo} className="project-link">
             <motion.button
             initial={{scale: 1}}
             whileHover={{scale: 1.2}}
             transition={{type: "spring", stiffness: 300, bounce: 0.5}}
             className="project-button-link">Demo</motion.button>
-          </a>
+          </a>}
         </div>
       </div>
     </div>
