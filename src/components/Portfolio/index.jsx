@@ -7,6 +7,16 @@ import Skills from "./Skills/Skills";
 export default function index() {
   const projectList = [
     {
+      title: "ONG Alkemy client",
+      
+      description: "Webapp para una ONG que permite gestionar todo el contenido de la página, desde las actividades y novedades, hasta los contactos",
+      image:
+        "/projects/ong.webp",
+      tags: ["Frontend", "React"],
+      github: "https://github.com/Zaniuk/OT288-client",
+      demo: "https://ong.zaniuk.tech/",
+    },
+    {
       title: "ONG Alkemy API",
       //description: "RESTful API made with NodeJS, Express, MySQL and Sequelize. It have JWT-based auth system and form validations.",
       description: "API RESTful hecha con NodeJS, Express, MySQL y Sequelize. Cuenta con sistema de autenticación con JWT y validación de formularios",
