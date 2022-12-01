@@ -29,7 +29,7 @@ export default function Home() {
           <span className="color-blue bold">Autodidacta</span>, ambicioso y <span className="color-blue bold">entusiasta de los desafíos.</span> <br />
           Tengo experiencia creando aplicaciones web desde cero, <span className="color-blue bold">desde el diseño de arquitectura hasta UI/UX</span>. 
         </motion.p>
-        <Link to="/contact">
+        <Link to="/portfolio">
           <motion.span
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ export default function Home() {
                 transition: { type: "spring", stiffness: 300, bounce: 0.5 },
               }}
             >
-              ¡Charlemos!
+              Ver más
             </motion.button>
           </motion.span>
         </Link>
