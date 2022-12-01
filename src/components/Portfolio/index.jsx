@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Card from "./Card";
 import Certification from "./Certification";
 import Skills from "./Skills/Skills";
+import Experience from "./Experience";
 export default function index() {
   const projectList = [
     {
@@ -164,6 +165,10 @@ export default function index() {
             />
           ))}
         </div>
+      </section>
+      <section className="experience">
+        <h1 className="section-title">Experiencia</h1>
+        <Experience/>
       </section>
       <section>
         <hr/>
