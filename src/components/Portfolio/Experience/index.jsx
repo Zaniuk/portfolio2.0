@@ -24,7 +24,7 @@ const experience = [
         title: "Profesor de React / NodeJS",
         date: "05-2022 - Presente",
         company: "Freelance",
-        description: "Responsable de diseñar una ruta de estudio en base a las necesidades y deseos del alumno. Indicar cómo seguir buenas prácticas, leer las documentaciones oficiales y como diseñar una arquitectura de proyecto. Enseñar maneras en las que podemos escribir código limpio, escalable y mantenible.",
+        description: "Responsable de diseñar una ruta de estudio en base a las necesidades del alumno. Indicar cómo seguir buenas prácticas, leer las documentaciones oficiales y como diseñar una arquitectura de proyecto. Enseñar maneras en las que podemos escribir código limpio, escalable y mantenible.",
         color :"#6BA75C"
     },
     {
