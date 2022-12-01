@@ -3,7 +3,7 @@ import "./index.scss";
 import { motion } from "framer-motion";
 import Card from "./Card";
 import Certification from "./Certification";
-import Skills from "./Skills/Skills";
+
 import Experience from "./Experience";
 import NewSkills from "./Skills/NewSkills";
 export default function index() {
