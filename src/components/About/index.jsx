@@ -2,11 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./index.scss";
 import UserPicture from "./UserPicture";
+import NewAbout from "./NewAbout";
 export default function index() {
   return (
     <section className="about">
       <UserPicture />
-      <motion.article
+      {/* <motion.article
         initial={{ x: -500, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.5 }}
@@ -67,7 +68,8 @@ export default function index() {
           compromiso y ambiciones de crecimiento me convierten en el mejor
           candidato para su equipo.
         </motion.p>
-      </motion.article>
+      </motion.article> */}
+      <NewAbout/>
     </section>
   );
 }
