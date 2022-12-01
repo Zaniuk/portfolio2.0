@@ -5,6 +5,7 @@ import Card from "./Card";
 import Certification from "./Certification";
 import Skills from "./Skills/Skills";
 import Experience from "./Experience";
+import NewSkills from "./Skills/NewSkills";
 export default function index() {
   const projectList = [
     {
@@ -146,10 +147,10 @@ export default function index() {
   ];
   return (
     <>
-    <section className="skills-section">
+    <div>
       <h1 className="section-title">Tecnologías</h1>
-      <Skills/>
-    </section>
+      <NewSkills/>
+    </div>
       <section className="projects">
         <h1 className="section-title">Proyectos</h1>
         <div className="projects-container">
