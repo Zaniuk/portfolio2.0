@@ -18,7 +18,7 @@ const experience = [
     },
     {
         title: "Python Developer",
-        date: "01-2019 - 04-2020",
+        date: "04-2018 - 04-2020",
         company: "PCShow Computación",
         description :"Responsable del diseño, desarrollo e implementación de plataforma de registro de incidencias teniendo en cuenta la eficiencia y escalabilidad de la misma.",
         color :"#5744dc"
