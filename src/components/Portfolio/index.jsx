@@ -167,10 +167,10 @@ export default function index() {
           ))}
         </div>
       </section>
-      <section className="experience">
+      <div>
         <h1 className="section-title">Experiencia</h1>
         <Experience/>
-      </section>
+      </div>
       <section>
         <hr/>
         <h1 className="section-title">Certificaciones</h1>
