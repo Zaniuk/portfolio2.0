@@ -6,7 +6,10 @@ import Certification from "./Certification";
 
 import Experience from "./Experience";
 import NewSkills from "./Skills/NewSkills";
+import { useMediaQuery } from "@mui/material";
+import NewSkillsMobile from "./Skills/NewSkillsMobile";
 export default function index() {
+  const mobile = useMediaQuery("(max-width: 550px)");
   const projectList = [
     {
       title: "ONG Alkemy client",
@@ -149,7 +152,7 @@ export default function index() {
     <>
     <div>
       <h1 className="section-title">Tecnologías</h1>
-      <NewSkills/>
+      {mobile ? (<NewSkillsMobile/>):(<NewSkills/>)}
     </div>
       <section className="projects">
         <h1 className="section-title">Proyectos</h1>

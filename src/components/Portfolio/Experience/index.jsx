@@ -1,8 +1,10 @@
 import * as React from "react";
 import Timeline from "@mui/lab/Timeline";
 import timelineItemClasses from "@mui/lab/TimelineItem";
+import { TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from "@mui/lab";
+import { Paper, Typography } from "@mui/material";
 
-import { ExperienceItem, ExperienceItemMobile } from "./ExperienceItem";
+
 const experience = [
   {
     title: "Fullstack Developer",
@@ -48,30 +50,69 @@ export default function CustomizedTimeline() {
   return (
     width > breakpoint ? (
         <Timeline align="alternate">
-          {experience.map((item, index) => (    
-            <ExperienceItem
+          {experience.map((item, index) => (
+            <TimelineItem
               key={index}
-              {...item}
-                index={index}
-            />
-            ))}
+              sx={{
+                "&:before": {
+                  display: "none",
+                },
+              }}
+            >
+              <TimelineOppositeContent
+                sx={{ m: "auto 0", textAlign: "right" }}  
+              >
+                <Typography variant="body2" color={item.color}>
+                  {item.date}
+                </Typography>
+              </TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineDot sx={{ bgcolor: item.color }} />
+                {index !== experience.length - 1 && <TimelineConnector />}
+              </TimelineSeparator>
+              <TimelineContent sx={{
+              }}>
+                <Paper elevation={3} sx={{ p: "6px 16px", bgcolor: 'transparent', color: 'white' }}>
+                  <Typography variant="h6" component="span" color={item.color}>
+                    {item.title}
+                  </Typography>
+                  <Typography>{item.company}</Typography>
+                  <Typography>{item.description}</Typography>
+                </Paper>
+              </TimelineContent>
+            </TimelineItem>
+          ))}
         </Timeline>
         ) : (
-        <Timeline sx={{
-            [`& .${timelineItemClasses.root}:before`]: {
-                flex: 0,
-                padding: 0,
-              },
-        }}>
-            {experience.map((item, index) => (
-            <ExperienceItemMobile
-                key={index}
-                {...item}
-                index={index}
-            />
-            ))}
+        <Timeline align="right" >
+          {experience.map((item, index) => (
+            <TimelineItem
+
+              key={index}
+              sx={{
+                "&:before": {
+                  display: "none",
+                },
+              }}
+            >
+              <TimelineSeparator>
+                <TimelineDot sx={{ bgcolor: item.color }} />
+                {index !== experience.length - 1 && <TimelineConnector />}
+              </TimelineSeparator>
+              <TimelineContent>
+                <Paper elevation={3} sx={{ p: "6px 16px" }}>
+                  <Typography variant="h6" component="span" color={item.color}>
+                    {item.title}
+                  </Typography>
+                  <Typography>{item.company}</Typography>
+                  <Typography>{item.description}</Typography>
+                </Paper>
+              </TimelineContent>
+            </TimelineItem>
+          ))}
         </Timeline>
         )
+
         
   );
 }
