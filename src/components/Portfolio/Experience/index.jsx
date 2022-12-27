@@ -11,7 +11,9 @@ const experience = [
     date: "09-2022 - Presente",
     company: "Alkemy Labs",
     description:
-      "Responsable de desarrollar y mantener una aplicación web de una ONG Diseñé el front-end de la aplicación utilizando React y MaterialUI, y el back-end utilizando Node.js, Express y MySQL con Sequelize. Configuré la integración y despliegue contínuo en un servidor privado virtual.",
+      `La arquitectura propuesta por mí logró un tiempo de respuesta rápido y estable del sistema, lo que resultó en una mejora significativa en la satisfacción del usuario final.\n
+        Aplicando los principios SOLID y arquitectura CLEAN he diseñado y desarrollado un sistema que se ha mostrado altamente escalable y fácil de mantener y actualizar en el futuro.
+      `,
     color: "#347CC4",
   },
   {
@@ -19,25 +21,35 @@ const experience = [
     date: "05-2022 - Presente",
     company: "Freelance",
     description:
-      "Responsable de diseñar una ruta de estudio en base a las necesidades del alumno. Indicar cómo seguir buenas prácticas, leer las documentaciones oficiales y como diseñar una arquitectura de proyecto. Enseñar maneras en las que podemos escribir código limpio, escalable y mantenible.",
+      `Diseñar planes de estudio personalizados que ayuden a los alumnos a alcanzar sus metas y objetivos académicos.\n
+      Implementar buenas prácticas en el diseño de las rutas de estudio, como la lectura de documentaciones oficiales y la creación de arquitecturas de proyecto sólidas y bien pensadas.\n
+      Enseñar a los alumnos cómo escribir código limpio, escalable y mantenible, lo que les ayudará a desarrollar habilidades técnicas valiosas en su carrera profesional.
+      `,
     color: "#6BA75C",
   },
   {
-    title: "Python Developer",
-    date: "01-2019 - 04-2020",
+    title: "Fullstack Developer",
+    date: "03-2022 - 09-2022",
+    company: "J.P Morgan Chase & Co.",
+    description:
+      `<b>Capacitación laboral</b>
+      Metodologías ágiles y GitFlow
+      Aplicación de patrones de diseño
+      Desarrollo de soluciones utilizando arquitecturas límpias y microservicios
+      Desarrollo de aplicaciones eficientes y escalables con un alto grado de adaptabilidad a diferentes proyectos y situaciones.
+      
+      `,
+    color: "#6BA75C",
+  },
+  {
+    title: "Fullstack Developer",
+    date: "03-2018 - 04-2020",
     company: "PCShow Computación",
     description:
       "Responsable del diseño, desarrollo e implementación de plataforma de registro de incidencias teniendo en cuenta la eficiencia y escalabilidad de la misma.",
     color: "#5744dc",
   },
-  {
-    title: "Técnico en Soporte Informático",
-    date: "02-2018 - 03-2020",
-    company: "PCShow Computación",
-    description:
-      "Asistencia técnica. Diagnósis a nivel de software y de componentes. Documentación de procedimientos e incidentes. Configuración, instalación, mantenimiento y soporte a usuarios de software base.",
-    color: "#047CFC",
-  },
+
 ];
 export default function CustomizedTimeline() {
   const [width, setWidth] = React.useState(window.innerWidth);
