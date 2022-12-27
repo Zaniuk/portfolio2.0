@@ -32,21 +32,25 @@ const experience = [
     date: "03-2022 - 09-2022",
     company: "J.P Morgan Chase & Co.",
     description:
-      `<b>Capacitación laboral</b>
+      `(Capacitación laboral)\n
       Metodologías ágiles y GitFlow
       Aplicación de patrones de diseño
       Desarrollo de soluciones utilizando arquitecturas límpias y microservicios
       Desarrollo de aplicaciones eficientes y escalables con un alto grado de adaptabilidad a diferentes proyectos y situaciones.
       
       `,
-    color: "#6BA75C",
+    color: "#347CC4",
   },
   {
     title: "Fullstack Developer",
     date: "03-2018 - 04-2020",
     company: "PCShow Computación",
     description:
-      "Responsable del diseño, desarrollo e implementación de plataforma de registro de incidencias teniendo en cuenta la eficiencia y escalabilidad de la misma.",
+      `Mejorar la eficiencia del registro de usuarios y las incidencias, lo que reduce el tiempo y los esfuerzos necesarios para llevar un registro completo y preciso.
+      Acelerar el tiempo de respuesta en búsquedas, lo que permite a los usuarios y clientes encontrar la información que necesitan de manera más rápida y sencilla.
+      Aumentar la tolerancia a errores del sistema aplicando filtros y normalizado de datos.
+      Decreció el coste de capacitación de nuevos empleados gracias a una interfaz amigable para el usuario.
+      `,
     color: "#5744dc",
   },
 
